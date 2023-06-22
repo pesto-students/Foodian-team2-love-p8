@@ -1,0 +1,25 @@
+{
+  "name": "mern-project-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmana-git/Mern-Project-File.git"
+  },
+  "author": "MERN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmana-git/Mern-Project-File/issues"
+  },
+  "homepage": "https://github.com/lakshmana-git/Mern-Project-File#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22"
+  }
+}
