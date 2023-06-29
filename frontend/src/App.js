@@ -8,20 +8,28 @@ import Header from './components/Header.js/Header';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services.js/Services';
 import {Router,Route} from "react-router-dom"
+import Userheader from './components/User header/Userheader';
+import { Banner } from './components/Banner/Banner';
+import Offers from './components/Offers/Offers';
+
+
 
 function App() {
   return (
     <div className="App">
     
-      <Header/>
+    <Userheader/>
+    <Banner/>
+    <Offers/>
+      {/* <Header/>
      
       <Hero/>
       
       <Services/>
-      <Footer/>
+      <Footer/> */}
 
-{/* 
-      <Signup/>
+
+      {/* <Signup/>
       <Login/> */}
     </div>
   );

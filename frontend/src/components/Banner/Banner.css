@@ -1,0 +1,49 @@
+.bg {
+    /* background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%);  */
+    background-image: url("../../../public/final_food.png");
+    background-size:100%;
+    animation: bg 35s linear infinite ;
+    background-size: cover;
+    
+    width:100vw;
+    padding: 25px;
+    margin-top:120px;
+
+    
+  }
+  
+  @keyframes bg{
+    0%{
+      background-position-x: 0;
+    }
+    
+    100%{
+      background-position-x: 3000px;
+    }
+  }
+.h-banner{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+.main{
+    color: #ffffff;
+}
+
+.banner{
+    margin-left:20px;
+   
+}
+
+@media (max-width:800px){
+            .bg{
+                margin-top: 90px;
+                
+              
+            }
+            .h-banner{
+                font-size: 1.7rem
+            }
+            
+}
+
+
