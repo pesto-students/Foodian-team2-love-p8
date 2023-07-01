@@ -7,7 +7,10 @@ import SwiperCore, { Autoplay, Navigation } from 'swiper/core';
 import "./Services.css";
 import data from '../../utils1/slider.json'
 import { sliderSettings } from '../../utils1/common';
+import { Link } from 'react-router-dom';
+
 SwiperCore.use([Autoplay, Navigation]);
+
 
 const Services = () => { 
     console.log(Swiper)
@@ -33,7 +36,7 @@ const Services = () => {
                }
                
         </Swiper>
-        <button className='button'>Order Now</button>
+        <Link to="/login"><button className='button'>Order Now</button></Link>
         </div>
     </section>
   )

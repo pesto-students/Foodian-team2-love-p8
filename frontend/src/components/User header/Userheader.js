@@ -4,6 +4,7 @@ import {BiMenuAltRight} from 'react-icons/bi'
 import {} from "@mui/material"
 import {BarChart, LoginSharp, LoginTwoTone, LogoutOutlined, LogoutTwoTone, PersonPinCircleOutlined, SearchRounded, ShoppingCartRounded} from "@mui/icons-material"
 import "./Userheader.css"
+import img from "../../Assets/Imags/Foodian_logo.png"
 
 const Userheader = () => {
   const [menuOpened,setMenuOpened]=useState(false)
@@ -14,43 +15,11 @@ const Userheader = () => {
     }
   }
   return (
-    // <header>
-    //      <img src="./Foodian_logo.png" alt="logo"  className='logo'/>
-
-    //      {/* <div className='inputBox'>
-                
-    //          <SearchRounded className='searchIcon'/>
-    //          <input type="text" placeholder='Searh Restaurants'/>
-
-
-    //      </div> */}
-    //      <div className='shoppingCart'>
-    //           <ShoppingCartRounded  className='cart'/>
-    //           <div className='cart_content'>
-    //             <p>2</p>
-    //           </div>
-             
-    //      </div>
-    //      <div className='profileContainer'>
-    //           <div className='imgBox'>
-    //                 <PersonPinCircleOutlined />
-    //                 <h2 className='userName'>Sachin</h2>
-
-    //           </div>
-    //      </div>
-
-
-    //     <div className='toggleMenu'>
-    //       <BarChart className="toggleIcon"/>
-
-    //     </div>
-    //          <div>
-    //      </div>
-    // </header>
-    <section style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
+    
+    <section className='section1' style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
     <div className='flexCenter paddings innerWidth header1' >
         <div className='flexCenter h-name' >
-            <img src="./Foodian_logo.png" alt="logo"  className='imglogo'/>
+            <img src={img} alt="logo"  className='imglogo'/>
             <p>Foodian</p>
         </div>
         

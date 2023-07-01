@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Signup.css"
-
+import s_img from "../../Assets/Imags/Foodian_logo.png"
 const Signup = () => {
   return (
     <section>
@@ -8,7 +8,7 @@ const Signup = () => {
       <div className='login-page'>
         
                        <div className='login-main'> 
-                       <img src="./Foodian_logo.png" alt="logo" className='login-i'  />
+                       <img src={s_img} alt="logo" className='login-i'  />
                        <h2 className='login-h'>Create Account</h2>
                        <form className='Form'>
 

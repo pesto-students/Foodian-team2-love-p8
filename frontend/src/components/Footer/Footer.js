@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import f_img from "../../Assets/Imags/Foodian_logo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className='innerWidth'>
        
        <div className='flexStart paddings'>
-                <img src="./Foodian_logo.png" alt="logo" className='f-img'/>
+                <img src={f_img} alt="logo" className='f-img'/>
                 <p className='f-name'>Foodian</p>
             </div>
 

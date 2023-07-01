@@ -1,0 +1,47 @@
+[
+    {
+      "name": "Family Restaurant",
+      "rating":"4.2",
+      "items":[{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},
+      {"id":2,"name":"Chicken Biryani","price":"252","img":"https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"},{"id":1,"name":"Pot Biryani","price":"250","img":"https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&ga=GA1.2.362557203.1684250412&semt=sph"}
+    ], "image": "https://img.freepik.com/free-photo/bowl-biryani-with-spoon-bowl-food-it_505751-3822.jpg?size=626&ext=jpg&ga=GA1.1.362557203.1684250412&semt=sph"
+    },
+    {
+      "name": "Star Biryani Point",
+      "rating":"4.1",
+      
+      "image": "https://img.freepik.com/free-photo/bowl-biryani-with-spoon-bowl-food-it_505751-3822.jpg?size=626&ext=jpg&ga=GA1.1.362557203.1684250412&semt=sph"
+    },
+    {
+      "name": "Hotel Taj Maharaj",
+      "rating":"4.0",
+      
+      "image": "https://img.freepik.com/free-photo/healthy-beef-stew-cooked-rustic-casserole-generated-by-ai_188544-15984.jpg?size=626&ext=jpg&ga=GA1.1.362557203.1684250412&semt=sph"
+    },
+    {
+      "name": "Family Restaurant",
+      "rating":"4.2",
+      
+      "image": "https://img.freepik.com/free-photo/middle-eastern-arabic-dish-ai-generated-image_511042-1776.jpg?t=st=1688032217~exp=1688032817~hmac=1b78a766a3394bf6486b06c45a99329ecce23758fe248eb0052a0d01a1d9d61c&w=1480"
+    },
+    {
+      "name": "Star Biryani Point",
+      "rating":"4.1",
+      
+      "image": "https://img.freepik.com/free-photo/bowl-biryani-with-spoon-bowl-food-it_505751-3822.jpg?size=626&ext=jpg&ga=GA1.1.362557203.1684250412&semt=sph"
+    },
+    {
+      "name": "Hotel Taj Maharaj",
+      "rating":"4.0",
+      
+      "image": "https://img.freepik.com/free-photo/healthy-beef-stew-cooked-rustic-casserole-generated-by-ai_188544-15984.jpg?size=626&ext=jpg&ga=GA1.1.362557203.1684250412&semt=sph"
+    }
+    
+    
+    
+    
+  ]
+
+
+
+  

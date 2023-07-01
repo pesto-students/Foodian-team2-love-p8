@@ -1,13 +1,13 @@
 .bg {
     /* background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%);  */
-    background-image: url("../../../public/final_food.png");
+    background-image: url("../../Assets/Imags/final_food.png");
     background-size:100%;
     animation: bg 35s linear infinite ;
     background-size: cover;
     
     width:100vw;
     padding: 25px;
-    margin-top:120px;
+    margin-top:100px;
 
     
   }
