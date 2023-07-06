@@ -20,6 +20,10 @@ import UserpageLayout from './Pages/UserpageLayout';
 import Items from './components/ItemsList/Items';
 
 import Customer from './Pages/Customer';
+import Cart from './Pages/Cart/Cart';
+import Admin from './components/Admin/Admin';
+import AdminItems from './components/Admin/AdminItems';
+import AdminAdd from './components/Admin/AdminAdd';
 
  
 
@@ -37,9 +41,15 @@ function App() {
                  <Route path="/login/user" element={<UserpageLayout/>}>
                        <Route index element={<Customer/>}/>
                        <Route path=':id' element={<Items/>}/>
+                       <Route path="cart" element ={<Cart/>}/>
                  </Route>
                  
-                 
+                 <Route path="/admin" element={<Admin/>}>
+                      <Route index element={<AdminItems/>}/>
+                       <Route path="admin-add" element={<AdminAdd/>}/>
+                       <Route path="admin-orders" element ={<Cart/>}/>
+
+                 </Route>
                   <Route path="/signup" element={<Signuppage/>}/>
                   <Route path="/" element={<Landingpage/>} />
                   <Route path="/login" element={<Loginpage/>} />

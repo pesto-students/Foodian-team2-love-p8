@@ -5,8 +5,16 @@ import {} from "@mui/material"
 import {BarChart, LoginSharp, LoginTwoTone, LogoutOutlined, LogoutTwoTone, PersonPinCircleOutlined, SearchRounded, ShoppingCartRounded} from "@mui/icons-material"
 import "./Userheader.css"
 import img from "../../Assets/Imags/Foodian_logo.png"
+import { Link } from 'react-router-dom'
+
+import { useSelector } from 'react-redux'
+import { cartProducts } from '../../Store/cart/cartSlice'
 
 const Userheader = () => {
+  const productsInCart = useSelector(cartProducts)
+  const cartCount = productsInCart ? productsInCart.length:0
+  //cart
+
   const [menuOpened,setMenuOpened]=useState(false)
  
   const getMenuStyles=(menuOpened)=>{
@@ -31,13 +39,17 @@ const Userheader = () => {
            
             <a href="/">Your Orders</a>
 
-            <div className='shoppingCart'>
+            <Link to="cart"><div className='shoppingCart'>
               <ShoppingCartRounded  className='cart'/>
-              <div className='cart_content'>
-                <p>2</p>
-               </div>
+              {
              
-            </div>
+               
+                 cartCount>0 ?  <div className='cart_content'><p>{cartCount}</p></div> : null
+               }
+               
+              
+             
+            </div></Link>
             
             
 

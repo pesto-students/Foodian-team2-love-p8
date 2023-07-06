@@ -1,0 +1,64 @@
+.tab-container{
+    background-color: rgb(255, 255, 255);
+}
+.tab-inside{
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  border-bottom: 1px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+
+}
+
+
+
+
+.nav-item{
+  padding: 8px;
+  margin-left: 10px;
+
+}
+.button-item{
+  background-color: #fff;
+  border-style: none;
+  font-size: 1rem;
+  padding-top:10px;
+ 
+  
+}
+.my-component{
+  color: black;
+}
+.my-component.active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(8, 17, 138);
+ 
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+
+.my-component:not(.active) {
+  border: none;
+  color: slategray;
+ 
+  font-size: 1rem;
+ 
+}
+
+
+@media (max-width:700px){
+              .my-component.active{
+                 font-size: 1rem;
+              }
+              .my-component:not(.active){
+                font-size: 0.8rem;
+              }
+}
+  
