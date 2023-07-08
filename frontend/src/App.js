@@ -24,6 +24,11 @@ import Cart from './Pages/Cart/Cart';
 import Admin from './components/Admin/Admin';
 import AdminItems from './components/Admin/AdminItems';
 import AdminAdd from './components/Admin/AdminAdd';
+import AdminOrders from './components/Admin/AdminOrders';
+import AdminOrders2 from './components/Admin/AdminOrders2';
+import OrdersA from './components/Admin/AdminOrders/OrdersA';
+import AcceptdA from './components/Admin/AdminOrders/AcceptdA';
+import Delivered from './components/Admin/AdminOrders/Delivered';
 
  
 
@@ -47,7 +52,14 @@ function App() {
                  <Route path="/admin" element={<Admin/>}>
                       <Route index element={<AdminItems/>}/>
                        <Route path="admin-add" element={<AdminAdd/>}/>
-                       <Route path="admin-orders" element ={<Cart/>}/>
+                       <Route path="admin-orders" element ={<AdminOrders2/>}>
+                            <Route index element={<OrdersA/>}/>
+                            <Route path='accepted' element={<AcceptdA/>}/>
+                            <Route path="delivered" element ={<Delivered/>}/>
+
+
+                       </Route>
+                       
 
                  </Route>
                   <Route path="/signup" element={<Signuppage/>}/>

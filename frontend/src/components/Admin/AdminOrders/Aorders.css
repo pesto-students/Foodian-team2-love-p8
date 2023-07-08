@@ -1,0 +1,50 @@
+.orderA-main{
+    
+    height: 470px;
+    width: 1000px;
+    overflow:auto;
+  }
+  
+
+.orders-ele{
+   
+    width: 900px;
+   padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.orders-ele-1{
+  
+  width: 900px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Higher z-index to bring the pop-up to the front */
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 10000; /* Higher z-index to bring the pop-up to the front */
+  overflow: scroll;
+}
+
+/* Other existing styles for orders-ele and other elements */
