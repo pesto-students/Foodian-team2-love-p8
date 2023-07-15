@@ -2,9 +2,9 @@
 .summary-card{
  overflow: scroll;
  
-  height: 500px;
-
- 
+   max-height: 500px;
+     min-width: 350px;
+   
   
  
 }
@@ -12,6 +12,7 @@
 .product-card {
   display: flex;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 10px;
   
  
   }
@@ -20,7 +21,7 @@
 
 .div1{
  
-  width:700px;
+  width:690px;
   
   margin-top: 20px;
 }
@@ -72,7 +73,10 @@
   padding:3px;
   
 }
+.total-p{
+  font-size:2rem;
 
+}
 
 
 @media (max-width:700px){
@@ -90,7 +94,9 @@
   .summary-card{
     overflow: scroll;
     
-     height: 350px;
+     max-height: 400px;
+     min-width: 350px;
+
      width:350px;
    
     
@@ -120,8 +126,17 @@
     color:black;
   }
 }
-
-
+.total-amount{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 30px;
+}
+.total-button{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
 
 
 

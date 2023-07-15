@@ -9,7 +9,7 @@ const ProductCard = ({product,onAddProduct}) => {
     }
   return (
     <div className="main2 flexColCenter">
-    <img src={product.img} alt="food" className="item-img" />
+    <img src={product.image_url} alt="food" className="item-img" />
      <p className="item-name">{product.name}</p>
      <div className="flexCenter">
        <CurrencyRupeeOutlined />

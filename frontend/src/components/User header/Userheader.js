@@ -55,7 +55,7 @@ const Userheader = () => {
 
            
           
-           <LogoutTwoTone/>
+           <Link to="/"><LogoutTwoTone/></Link>
            
 
             

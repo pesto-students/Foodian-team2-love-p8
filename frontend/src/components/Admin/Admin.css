@@ -11,7 +11,32 @@
     font-size: 1.5rem;
     
 }
+.active{
+  text-decoration: underline;
+}
+.desk1{
+  width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
 
+}
+@media (max-width:800px){
+  .desk{
+    display: none;
+  }
+  
+}
+
+@media (min-width:800px){
+  .desk1{
+    display: none;
+  }
+  
+}
 
 
 
@@ -125,6 +150,22 @@
     border-width: 2px;
     
   }
+  .message {
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .success {
+    background-color: green;
+    color: white;
+  }
+  
+  .error {
+    background-color: red;
+    color: white;
+  }
+  
 
 
 

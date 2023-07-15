@@ -1,6 +1,7 @@
 
 import './Admin.css'
 import React, { useState } from 'react';
+
 import { Outlet } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -39,8 +40,10 @@ const AdminOrders2 = () => {
           >
             Delivered
           </Link>
+          
         </div>
-        <Outlet />
+        
+        <Outlet/>
       </div>
     </div>
   );

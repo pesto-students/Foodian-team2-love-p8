@@ -29,26 +29,39 @@ import AdminOrders2 from './components/Admin/AdminOrders2';
 import OrdersA from './components/Admin/AdminOrders/OrdersA';
 import AcceptdA from './components/Admin/AdminOrders/AcceptdA';
 import Delivered from './components/Admin/AdminOrders/Delivered';
+import Delivery from './components/Delivery/Delivery';
+import DeliveryList from './components/Delivery/DeliveryList';
+import DeliveryAcc from './components/Delivery/DeliveryAcc';
+import PaySuccess from './components/PaymentForm/PaySuccess';
 
- 
+ import { UserProvider } from './Hooks/userContext';
+import PayCSuccess from './components/PaymentForm/PayCSuccess';
 
 
 
 
 function App() {
   return (
+    <UserProvider>
     <div className="App">
     
     
       <Routes>
-               
+        
+               {/* user routes */}
+                 <Route path="/" element={<Landingpage/>} />
                  <Route path="/login" element={<Loginpage/>}/>
+                 <Route path="/signup" element={<Signuppage/>}/>
                  <Route path="/login/user" element={<UserpageLayout/>}>
                        <Route index element={<Customer/>}/>
                        <Route path=':id' element={<Items/>}/>
                        <Route path="cart" element ={<Cart/>}/>
+                       <Route path="success/:orderId" element={<PayCSuccess/>}/>
                  </Route>
-                 
+        
+
+
+                 {/* Admin Routes */}
                  <Route path="/admin" element={<Admin/>}>
                       <Route index element={<AdminItems/>}/>
                        <Route path="admin-add" element={<AdminAdd/>}/>
@@ -62,15 +75,31 @@ function App() {
                        
 
                  </Route>
-                  <Route path="/signup" element={<Signuppage/>}/>
-                  <Route path="/" element={<Landingpage/>} />
-                  <Route path="/login" element={<Loginpage/>} />
+
+
+
+                 {/* Delivery Routes */}
+
+
+                 < Route path='/delivery' element={<Delivery/>}>
+                  
+                       <Route index element={<DeliveryList/>}/>
+                    
+                       
+                 </Route>
+                 <Route path="accept-order/:orderId" element={<DeliveryAcc/>}/>
+                 <Route path="/delivered" element={<PaySuccess/>}/>
+                
+
+                 
 
       </Routes> 
       {/* <Userheader/>
       <Items/> */}
     </div>
+    </UserProvider>
   );
+
 }
 
 export default App;

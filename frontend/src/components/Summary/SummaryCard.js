@@ -10,7 +10,7 @@ const SummaryCard = ({product}) => {
     
     <div className='product-card'>
             <div className='product-img-cont'>
-              <img src={product.img} alt={product.name} className='product-img'/>
+              <img src={product.image_url} alt={product.name} className='product-img'/>
               <div>
               <h3 className='product-h3'>{product.name}</h3>
               <div className="product-price"><CurrencyRupeeIcon className='product-icon' /><p>{product.price}</p></div>

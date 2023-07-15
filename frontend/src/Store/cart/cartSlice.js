@@ -19,15 +19,15 @@ export const  cartSlice = createSlice({
             return {products:[]}
         },
         incrementProductsAmount :(state,action)=>{
-            return {products:state.products.map(product=>product.id===action.payload.id?{...product,amount:product.amount+1}:product)}
+            return {products:state.products.map(product=>product._id===action.payload._id?{...product,amount:product.amount+1}:product)}
         },
         decrementProductsAmount :(state,action)=>{
-            return {products:state.products.map(product=>product.id===action.payload.id?{...product,amount:product.amount-1}:product)}
+            return {products:state.products.map(product=>product._id===action.payload._id?{...product,amount:product.amount-1}:product)}
         },
         removeFromCart: (state, action) => {
             return {
               products: state.products.filter(
-                (product) => product.id !== action.payload.id
+                (product) => product._id !== action.payload._id
               ),
             };
           }

@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import {set, useForm} from 'react-hook-form'
 import './AddressForm.css'
-import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useDispatch } from 'react-redux';
 import { setAddress } from '../../Store/UserInfo/addressSlice';
 const AddressForm = ({onTabSwitch}) => {
@@ -12,7 +12,7 @@ const AddressForm = ({onTabSwitch}) => {
   const handleDeliveryTypeChange = (event) => {
     const { value } = event.target;
     setDeliveryType(value);
-    setAddressInputsDisabled(value === 'takaway');
+    setAddressInputsDisabled(value === 'Take Away');
   };
     const {register,handleSubmit} = useForm()
     const dispatch = useDispatch()
@@ -29,11 +29,11 @@ const AddressForm = ({onTabSwitch}) => {
     <form className='address' onSubmit={handleSubmit(onSubmit)}>
          <p className='address-p'>Please Select Delivery Type</p>
         <div class="one">
-          <input type="radio" id="take" name="address" value="takaway"
-            checked={deliveryType === 'takaway'}
+          <input type="radio" id="take" name="address" value="Take Away"
+            checked={deliveryType === 'Take Away'}
             onChange={handleDeliveryTypeChange}
              className='radio'/>
-          <label for="takeaway" className='address-p1'>Take Away</label>
+          <label for="Take Away" className='address-p1'>Take Away</label>
           </div>
           <div className='two'>
           <input type="radio" id="take1" name="address" value="Home Delivery"
@@ -101,8 +101,13 @@ const AddressForm = ({onTabSwitch}) => {
         </div>
 
             <div className='b-address'>
-                <button className='button' type="submit">NEXT</button>
-
+               
+                <button className='button' type='submit'>
+              <div className='flexCenter'>
+                  <p style={{fontSize:"17px"}}>Next</p>
+                  <ArrowRightAltIcon style={{fontSize:"30px",marginLeft:"6px"}}/>
+              </div>
+        </button>
             </div>
       
 

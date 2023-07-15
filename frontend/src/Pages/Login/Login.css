@@ -9,17 +9,17 @@ section{
 
 
 .login-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-         /* From https://css.glass */
-background: rgba(250, 141, 141, 0.34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+       /* From https://css.glass */
+background: rgba(241, 170, 236, 0.34);
 border-radius: 1rem;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.3px);
 -webkit-backdrop-filter: blur(5.3px);
-border: 1px solid rgba(250, 141, 141, 1);
+border: 1px solid rgb(250, 141, 250);
 
 height:80vh;
 width:90vw;
@@ -97,6 +97,14 @@ h6{
   cursor: pointer;
   
 
+}
+.error-message{
+ 
+  background-color: rgb(252, 181, 181);
+  color:black;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid red;
 }
 
 

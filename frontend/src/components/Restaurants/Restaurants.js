@@ -1,18 +1,20 @@
 import React from 'react'
 import "./Restaurants.css"
 import data from '../../utils1/resto.json'
+import { Link } from 'react-router-dom'
 import { Star } from '@mui/icons-material'
+import { filteredRestaurants } from '../Banner/Banner';
 const Restaurants = () => {
     
     const restoEle = data.map(resto => (
-        <div className='restoCard'>
+        <div className='restoCard'><Link to='/login/user/2'>
             <img src={resto.image} alt="restaurant" className='restoImg'/>
             <p className='h-resto'>{resto.name}</p>
             <div className='resto-rate'>
                 <p>{resto.rating}</p>
                 <Star/>
             </div>
-           
+            </Link>
            
         </div>
     ))

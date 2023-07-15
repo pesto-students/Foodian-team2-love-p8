@@ -1,0 +1,138 @@
+.delivery{
+    display: flex;
+    height: 100vh;
+    width:100vw;
+    flex-direction: column;
+   justify-content: flex-end;
+}
+
+@media (min-width:821px){
+    .delivery{
+        display: none;
+    }
+}
+
+.d-desk{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:821px){
+    .d-desk{
+        display: none;
+    }
+}
+   
+    
+
+.delivery-cont{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width:100vw;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    color:gray;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.delivery-list{
+    height: 90vh;
+   
+}
+
+
+.delivery-list-1{
+    background-color:#FE511A;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.delivery-list-2{
+    height: 80vh;
+   overflow: scroll;
+    padding: 10px;
+   
+
+
+}
+.delivery-list-card{
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.map{
+  border-radius: 10px;
+
+}
+
+.maps-div{
+    height:100vh;
+    
+  
+}
+
+.deleivery-list-card-h{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.deleivery-list-card-p{
+    color: slategray;
+}
+.d-orders-nav{
+   
+   
+    display: flex;
+   padding: 30px;
+}
+.d-orders-1{
+    background-color: #f3e7e3;
+    color: #eb400b;
+    height: 50px;
+    width:50px;
+    border-radius: 10px;
+    padding: 12px;
+}
+.d-order-names{
+    margin-left: 20px;
+   
+}
+.d-order-names-1{
+    margin-bottom:40px;
+   
+}
+.d-order-button{
+    text-align: center;
+}
+.no-order-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.delivery-f{
+    background-color: rgb(255, 255, 255);
+    height:100px;
+    width:385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

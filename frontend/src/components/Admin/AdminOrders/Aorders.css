@@ -7,23 +7,79 @@
   
 
 .orders-ele{
-   
-    width: 900px;
+/*    
+     width: 1000px; */
    padding: 20px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    border-style: solid;
+    
+     
 }
 .orders-ele-1{
   
-  width: 900px;
+  /* width: 1000px; */
   padding: 20px;
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.order-button{
+  align-self: flex-start;
+}
+.order-button1{
+  align-self: flex-start;
+  background-color: rgb(132, 146, 226);
+  color:blue;
+  padding:10px;
+}
+.stamp {
+  transform: rotate(12deg);
+  align-self: flex-start;
+	color: #555;
+	font-size: 1rem;
+	font-weight: 700;
+	border: 0.25rem solid #555;
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+ 
+  padding: 20px;
+	font-family: 'Courier';
+	-webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+  -webkit-mask-size: 944px 604px;
+  mix-blend-mode: multiply;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 
+.is-approved {
+	color: #0A9928;
+	border: 0.5rem solid #0A9928;
+	-webkit-mask-position: 13rem 6rem;
+	transform: rotate(-10deg);
+  border-radius: 0;
+} 
+
+
+.orders-ele-1-h3{
+  
+}
+.orders-ele-1-p{
+   width:270px;
+   margin-left: 10px;
+  
+}
+.orders-ele-1-p1{
+  width:220px;
+ 
+}
 
 
 .popup-container {

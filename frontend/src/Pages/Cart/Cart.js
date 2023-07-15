@@ -1,14 +1,14 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import './Cart.css'
 import { Tabs } from '../../components/Tabs/Tabs'
-import { useSelector } from 'react-redux'
-
 import useTabSwitch from '../../Hooks/useTabSwitch'
-
 
 import { cartProducts } from '../../Store/cart/cartSlice'
 import AddressForm from '../../components/Address/AddressForm'
 import Summary from '../../components/Summary/Summary'
+import StripeWrapper from '../../components/PaymentForm/PaymentForm'
+
 
 
 const Cart = () => {
@@ -35,13 +35,13 @@ const Cart = () => {
             <div className='cart-main1'>
               <Tabs list={tabs} onTabSwitch={handleTabSwitch} activeTab={currentTab}/>
               <div className={`tabs ${currentTab !== 'Summary' ? 'hidden' : ''}`}>
-                           <Summary/>
+                           <Summary onTabSwitch={handleTabSwitch}/>
               </div>
               <div className={`tabs ${currentTab !== 'Delivery' ? 'hidden' : ''}`}>
                      <AddressForm onTabSwitch={handleTabSwitch}/>
               </div>
               <div className={`tabs ${currentTab !== 'Payment' ? 'hidden' : ''}`}>
-                            Payment
+                            < StripeWrapper/>
               </div>
 
               </div>
