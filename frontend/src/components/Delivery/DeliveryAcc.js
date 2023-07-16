@@ -4,7 +4,7 @@ import { useJsApiLoader, GoogleMap, Marker, DirectionsRenderer } from '@react-go
 import { Skeleton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Delivery.css';
-
+import { backendUrl } from '../../utils1/Url';
 const center = { lat: 17.686, lng: 83.218 };
 
 const DeliveryAcc = () => {
@@ -52,7 +52,7 @@ const DeliveryAcc = () => {
 
   const handleOrderDelivered = (orderId) => {
     // Make an HTTP request to update the order status to "delivered" in the backend
-    fetch(`http://localhost:5000/api/v1/item/order/${orderId}`, {
+    fetch(`${backendUrl}/api/v1/item/order/${orderId}`, {
       method: 'PUT',
     
       headers: {

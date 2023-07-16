@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-
+import { backendUrl } from '../../utils1/Url';
 const AdminAdd = () => {
   const options = ['meals', 'starters', 'fired rice', 'biryani','desserts'];
   const defaultOption = options[0];
@@ -30,7 +30,7 @@ const AdminAdd = () => {
       type:category,
     };
 
-    fetch('http://localhost:5000/api/v1/admin/items', {
+    fetch(`${backendUrl}/api/v1/admin/items`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

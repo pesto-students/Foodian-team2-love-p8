@@ -10,7 +10,7 @@ import {useNavigate} from 'react-router-dom'
 import { useState,useEffect,useContext } from 'react';
 import { UserContext } from '../../Hooks/userContext';
 import { Oval } from 'react-loader-spinner';
-
+import { backendUrl } from '../../utils1/Url';
 
 const stripePromise = loadStripe(`process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY`);
 
@@ -53,7 +53,7 @@ const PaymentForm = (props) => {
       
   
       // Example API call using fetch
-      fetch('http://localhost:5000/api/v1/item/order', {
+      fetch(`${backendUrl}/api/v1/item/order`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

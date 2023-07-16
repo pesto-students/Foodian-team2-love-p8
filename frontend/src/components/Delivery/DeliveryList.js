@@ -4,11 +4,12 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import HomeIcon from '@mui/icons-material/Home';
 import { Link } from 'react-router-dom';
 import { BallTriangle} from 'react-loader-spinner'
+import { backendUrl } from '../../utils1/Url';
 const DeliveryList = () => {
   const [order, setOrders] = useState([]);
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
-    fetch('http://localhost:5000/api/v1/item/order', {
+    fetch(`${backendUrl}/api/v1/item/order`, {
       method: 'GET',
       // Add any necessary parameters or query strings
     })

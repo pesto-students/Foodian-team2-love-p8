@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import './Aorders.css';
 
-
+import { backendUrl } from '../../../utils1/Url';
 import { BallTriangle} from 'react-loader-spinner'
 
 
@@ -13,7 +13,7 @@ const OrdersA = () => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/v1/item/order', {
+    fetch(`${backendUrl}/api/v1/item/order`, {
       method: 'GET',
       // Add any necessary parameters or query strings
     })
@@ -39,7 +39,7 @@ const OrdersA = () => {
 
   const handleAcceptOrder = (orderId) => {
     // Make a PUT request to update the status to "accepted" in the backend
-    fetch(`http://localhost:5000/api/v1/item/order/${orderId}`, {
+    fetch(`${backendUrl}/api/v1/item/order/${orderId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

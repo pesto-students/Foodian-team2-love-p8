@@ -4,6 +4,8 @@ import './Login.css';
 import l_img from '../../Assets/Imags/Foodian_logo.png';
 import { UserContext } from '../../Hooks/userContext';
 import { Link } from 'react-router-dom';
+import { backendUrl } from '../../utils1/Url';
+import { BallTriangle, Oval } from 'react-loader-spinner';
 const Login = () => {
   const { loginUser } = useContext(UserContext);
 
@@ -11,6 +13,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [showError, setShowError] = useState(false);
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -18,9 +21,9 @@ const Login = () => {
 
     // Calling the backend
     // Pass the 'email' and 'password' values to your backend API
-
+     setLoading(true)
     // Example API call using fetch
-    fetch('http://localhost:5000/api/v1/users/login', {
+    fetch(`${backendUrl}/api/v1/users/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,6 +38,7 @@ const Login = () => {
           setShowError(false);
           console.log('Login successful');
           // Navigate to the user page or perform any other actions
+          setLoading(false)
           if (data.role === 'user') {
             navigate('/login/user');
           } else if (data.role === 'admin') {
@@ -63,6 +67,7 @@ const Login = () => {
           <img src={l_img} alt='logo' className='login-i' />
           <h2 className='login-h'>Welcome Back</h2>
           {showError && <p className='error-message'>{errorMessage}</p>}
+          {loading ? <BallTriangle height={80} width={80} color="blue" />: ''}
           <form className='Form' onSubmit={handleLogin}>
             <label>Email</label>
             <input

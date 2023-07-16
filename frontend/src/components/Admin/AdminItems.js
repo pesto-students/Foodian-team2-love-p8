@@ -3,8 +3,7 @@ import data from '../../utils1/Products.json';
 import { Delete, Star } from '@mui/icons-material';
 import { BallTriangle} from 'react-loader-spinner'
 
-
-
+import { backendUrl } from '../../utils1/Url';
 
 
 
@@ -13,7 +12,7 @@ const AdminItems = () => {
   const [items,setItems] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/v1/admin/items', {
+    fetch(`${backendUrl}/api/v1/admin/items`, {
       method: 'GET',
       // Add any necessary parameters or query strings
     })
@@ -44,7 +43,7 @@ const AdminItems = () => {
   
       // Make API request to update availability in the database
       if (updatedStates[index]) {
-        fetch(`http://localhost:5000/api/v1/admin/items/${updatedItems[index]._id}`, {
+        fetch(`${backendUrl}/api/v1/admin/items/${updatedItems[index]._id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -60,7 +59,7 @@ const AdminItems = () => {
           });
       } else {
         // Availability is turned off, update the backend with availability: false
-        fetch(`http://localhost:5000/api/v1/admin/items/off/${updatedItems[index]._id}`, {
+        fetch(`${backendUrl}/api/v1/admin/items/off/${updatedItems[index]._id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -83,7 +82,7 @@ const AdminItems = () => {
     
     const itemId = items[index]._id;
   
-    fetch(`http://localhost:5000/api/v1/admin/items/remove/${itemId}`, {
+    fetch(`${backendUrl}/api/v1/admin/items/remove/${itemId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

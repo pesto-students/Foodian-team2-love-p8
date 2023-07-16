@@ -8,7 +8,7 @@ import { addToCart } from '../../Store/cart/cartSlice'
 import ProductCard from './ProductCard'
 import { BallTriangle } from 'react-loader-spinner'
 
-
+import { backendUrl } from '../../utils1/Url'
 
 
 
@@ -20,7 +20,7 @@ const [add,setAdd] = useState(false)
 const [availabilityFilter, setAvailabilityFilter] = useState('all'); // Filter state for availability
 const [categoryFilter, setCategoryFilter] = useState('all'); // Filter state for category
   useEffect(() => {
-    fetch('http://localhost:5000/api/v1/admin/items', {
+    fetch(`${backendUrl}/api/v1/admin/items`, {
       method: 'GET',
       // Add any necessary parameters or query strings
     })

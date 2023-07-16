@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Signup.css';
 import s_img from '../../Assets/Imags/Foodian_logo.png';
 import { Link } from 'react-router-dom';
-
+import { backendUrl } from '../../utils1/Url';
+import { BallTriangle, Oval } from 'react-loader-spinner';
 const Signup = () => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
@@ -12,16 +13,16 @@ const Signup = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [showError, setShowError] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false)
-
+  const [loading, setLoading] = useState(false)
 
   const handleSignup = (e) => {
     e.preventDefault();
   
     // Perform form validation here
     // Ensure all required fields are filled and passwords match
-  
+    setLoading(true)
     // Example API call using fetch
-    fetch('http://localhost:5000/api/v1/users/signup', {
+    fetch(`${backendUrl}/api/v1/users/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,6 +36,7 @@ const Signup = () => {
   
         if (data.status === "success") {
           setShowError(false);
+          setLoading(false)
           setShowSuccess(true)
           console.log('Signup successful');
           // Redirect to success page or perform any other actions 
@@ -69,7 +71,7 @@ const Signup = () => {
           <img src={s_img} alt='logo' className='login-i' />
           <h2 className='login-h'>Create Account</h2>
           {showError && <p className='error-message'>{errorMessage}</p>}
-         
+          {loading ? <BallTriangle height={80} width={80} color="blue" />: ''}
           {showSuccess && <p className='success-message'>Registration successful! You can now log in.</p>}
           <form className='Form' onSubmit={handleSignup}>
             <label>Name</label>
