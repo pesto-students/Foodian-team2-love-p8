@@ -60,7 +60,7 @@ const Delivered = () => {
     const dateB = new Date(b.orderDateTime);
 
     // Sort in ascending order (earliest order first), for descending order use "dateB - dateA"
-    return dateA - dateB;
+    return dateB - dateA;
   });
 
 
