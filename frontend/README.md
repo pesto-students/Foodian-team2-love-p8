@@ -7,3 +7,16 @@ you reach any destination.
 
 
 
+Test credentials:
+
+User:
+
+email:sachin@gmail.com password:sachin@123
+
+Admin:
+
+email:family@gmail.com password:family@Cabc123
+
+Delivery Person:
+
+email:anil@gmail.com password:anil@Cabc123
