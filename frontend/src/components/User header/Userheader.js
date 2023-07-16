@@ -37,7 +37,7 @@ const Userheader = () => {
         <div className='flexCenter h-menu' style={getMenuStyles(menuOpened)}>
           
            
-            <a href="/">Your Orders</a>
+            <Link to="order">Your Orders</Link>
 
             <Link to="cart"><div className='shoppingCart'>
               <ShoppingCartRounded  className='cart'/>

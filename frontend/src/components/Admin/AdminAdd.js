@@ -3,7 +3,7 @@ import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
 const AdminAdd = () => {
-  const options = ['Meals', 'Starters', 'Fired Rice', 'Desserts', 'Drinks'];
+  const options = ['meals', 'starters', 'fired rice', 'biryani','desserts'];
   const defaultOption = options[0];
   const [selectedOption, setSelectedOption] = useState(defaultOption);
   const [message, setMessage] = useState('');
@@ -27,7 +27,7 @@ const AdminAdd = () => {
       price,
       image_url,
       availability,
-      category,
+      type:category,
     };
 
     fetch('http://localhost:5000/api/v1/admin/items', {

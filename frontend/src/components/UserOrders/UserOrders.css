@@ -1,0 +1,17 @@
+.user-order{
+   
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-order-main{
+    height: 70vh;
+  
+    width:70vw;
+    margin-top: 60px;
+  
+   padding: 50px;
+
+}

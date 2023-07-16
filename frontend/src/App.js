@@ -36,6 +36,7 @@ import PaySuccess from './components/PaymentForm/PaySuccess';
 
  import { UserProvider } from './Hooks/userContext';
 import PayCSuccess from './components/PaymentForm/PayCSuccess';
+import UserOrders from './components/UserOrders/UserOrders';
 
 
 
@@ -55,6 +56,7 @@ function App() {
                  <Route path="/login/user" element={<UserpageLayout/>}>
                        <Route index element={<Customer/>}/>
                        <Route path=':id' element={<Items/>}/>
+                       <Route path='order' element={<UserOrders/>}/>
                        <Route path="cart" element ={<Cart/>}/>
                        <Route path="success/:orderId" element={<PayCSuccess/>}/>
                  </Route>

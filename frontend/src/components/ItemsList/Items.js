@@ -94,9 +94,9 @@ const [categoryFilter, setCategoryFilter] = useState('all'); // Filter state for
             <option value='starters'>Starter</option>
             <option value='biryani'>Biryani</option>
             <option value='fried rice'>Fried Rice</option>
-            <option value='thali'>Thali</option>
+            <option value='meals'>Thali</option>
            
-            <option value='dessert'>Dessert</option>
+            <option value='desserts'>Dessert</option>
           </select>
         </label>
       </div>
