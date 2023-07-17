@@ -1,0 +1,142 @@
+.item-card {
+    border-style: solid;
+    border-color: brown;
+    width: 250px;
+ 
+    border-radius: 10px;
+  }
+  
+  .item-img {
+    width: 220px;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 0; /* Remove the previous margin-top value */
+  }
+  
+  .main1 {
+    height: 240px;
+    width: 300px;
+    background-color: rgb(131, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main2 {
+    background-color: rgb(255, 255, 255);
+    margin:30px;
+    height: 189px;
+    width: 250px;
+    margin-top: 0px;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  
+   
+
+
+  }
+  .main2:hover{
+    box-shadow: 0 4px 30px rgba(44, 187, 8, 0.6);
+  }
+  
+  .item-img {
+    
+    transition: all 300ms ease-in;
+    width:200px;
+    
+  }
+  .item-img:hover{
+    transform: scale(1.1);
+  }
+  
+  .item-name {
+   
+    font-size: 1.3rem;
+  }
+  
+  .item-price {
+    font-size: 1.3rem;
+    
+  
+   
+  }
+  
+  .item-cart {
+    font-size: large;
+  }
+.items-container{
+    margin-top: 120px;
+}
+.item-heading{
+    text-align: center;
+   
+    text-decoration: underline;
+}
+.item-p{
+    color: rgb(14, 63, 128);
+    text-align: center;
+    font-size: 30px;
+   text-decoration: underline;
+   margin-top: 20px;
+    margin-bottom: 30px;
+}
+.item-button{
+  padding: 4px;
+}
+.filters{
+
+
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
+
+}
+.filters1{
+
+
+  margin-right: 30px;
+ 
+
+}
+
+.error-message1{
+  background-color: rgb(252, 181, 181);
+  color:black;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid red;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 300px;
+}
+.success-message1{
+  background-color: rgb(181, 252, 196);
+  color:black;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid rgb(72, 228, 0);
+  text-align: center;
+  margin-bottom: 30px;
+  width: 300px;
+}
+.filter-s{
+  border-style: none;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width:100px;
+  font-size: 1rem;
+  
+}
+@media (max-width:750px) {
+
+  .filters{
+
+       display: flex;
+  
+  }
+  .success-message1{
+    z-index: 1;
+  }
+}

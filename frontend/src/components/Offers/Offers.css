@@ -1,0 +1,22 @@
+.offers{
+    background-color: #1448FF;
+    width:fit-content;
+ color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ border-radius: 5px;
+ margin-right: 20px;
+    
+}
+.offers p{
+    font-size: 1rem;
+    width:150px;
+}
+.h-offers{
+    text-align: center;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    
+}

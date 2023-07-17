@@ -1,0 +1,1 @@
+export const backendUrl = 'https://food-foodian-delivery-1sko.onrender.com'
