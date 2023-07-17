@@ -76,6 +76,7 @@ const Signup = () => {
           <form className='Form' onSubmit={handleSignup}>
             <label>Name</label>
             <input
+            required
               className='login-ip'
               type='text'
               placeholder='Enter Name'
@@ -96,6 +97,7 @@ const Signup = () => {
 
             <label>Email</label>
             <input
+            required
               className='login-ip'
               type='email'
               placeholder='Enter Email address'
@@ -105,6 +107,7 @@ const Signup = () => {
 
             <label>Password</label>
             <input
+            required
               className='login-ip'
               type='password'
               placeholder='Enter password'
@@ -114,6 +117,7 @@ const Signup = () => {
 
             <label>Confirm Password</label>
             <input
+            required
               className='login-ip'
               type='password'
               placeholder='Re-enter password'

@@ -71,6 +71,7 @@ const Login = () => {
           <form className='Form' onSubmit={handleLogin}>
             <label>Email</label>
             <input
+              required
               className='login-ip'
               type='email'
               placeholder='Enter Email address'
@@ -79,6 +80,7 @@ const Login = () => {
             />
             <label>Password</label>
             <input
+            required
               className='login-ip'
               type='password'
               placeholder='Enter Password'
